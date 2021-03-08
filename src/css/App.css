@@ -2,10 +2,6 @@
   max-width: 960px;
 }
 
-/*
- * Custom translucent site header
- */
-
 .site-header {
   background-color: #fff;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -57,11 +53,6 @@
   left: 5%;
   background-color: #e5e5e5;
 }
-
-
-/*
- * Extra utilities
- */
 
 .flex-equal > * {
   flex: 1;
@@ -233,4 +224,15 @@ img.pagination-arrows.right-arrow {
   top: 0;
   left: 0;
   right: 0;
+}
+@media screen and (max-width: 689px) {
+  .filters{
+    display: block;
+  }
+  .selectors .vertical-separator{
+    border:none;
+  }
+  .selectors{
+    text-align: center;
+  }
 }
